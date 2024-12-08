@@ -6,8 +6,12 @@ app = Flask(__name__)
 def get_products():
     try:
         return jsonify([
-            {"id": 1, "name": "Product A"},
-            {"id": 2, "name": "Product B"}
+            {"id": 1, "nombre": "Product 1"},
+            {"id": 2, "nombre": "Product 2"},
+            {"id": 3, "nombre": "Product 3"},
+            {"id": 4, "nombre": "Product 4"},
+            {"id": 5, "nombre": "Product 5"}
+            
         ])
     except Exception as e:
         return jsonify({"error": str(e)}), 500
