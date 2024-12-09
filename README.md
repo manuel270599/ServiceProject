@@ -113,14 +113,11 @@ Ejecución:
 ## User_management:
 
 -**test_client():** Crea un cliente simulado para realizar solicitudes **HTTP** a la aplicación Flask sin necesidad de un servidor real.
+
 -**response = client.get('/users'):** Realiza una solicitud HTTP de tipo **GET** a la ruta **/users.** Esta ruta es la que se quiere probar.
+
 -**self.assertEqual(response.status_code, 500):** Este es un método de afirmación que verifica si el código de estado de la respuesta (response.status_code) es igual a 500.
 
-            -Si el código de estado es 500, la prueba pasará.
-            
-            -Si el código de estado es diferente a 500, la prueba fallará.
-
-            
   ![image](https://github.com/user-attachments/assets/dc34a8ee-0798-4002-a501-0a91374c32ba)
 
 Ejecución:
